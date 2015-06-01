@@ -1,8 +1,9 @@
 {
     "name": "gsl",
-    "version": "0.0.9",
+    "version": "0.1.0",
     "description": "GNU Scientific Library for NodeJS.",
     "author": "David Worms <david@adaltas.com>",
+    "license": "Public Domain, depends on GPL-3.0 code",
     "contributors": [{
         "name": "David Worms",
         "email": "david@adaltas.com"
@@ -12,16 +13,21 @@
     }, {
         "name": "Leeley Daio-Pires-Dos-Santos",
         "email": "leeley.daio-pires-dos-santos@edf.fr"
+    }, {
+        "name": "Patrick Mueller",
+        "email": "pmuellr@apache.org"
     }],
-    "engines": {
-        "node": ">= 0.1.90"
+    "scripts": {
+        "node-gyp": "node-gyp"
     },
     "dependencies": {
+        "nan":            "1.8.x"
     },
     "devDependencies": {
-        "coffee-script": "latest",
-        "mocha": "latest",
-        "should": "latest"
+        "coffee-script":  "1.9.x",
+        "mocha":          "2.2.x",
+        "node-gyp":       "2.0.x",
+        "should":         "6.0.x"
     },
     "keywords": ["library", "gsl", "mathematics", "random", "gaussian"],
     "repository": {
